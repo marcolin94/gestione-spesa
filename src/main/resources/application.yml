@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /ng-admin
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/gestione?currentSchema=casa
+    username: postgres
+    password: postgres
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+        ddl-auto: update
+logging:
+  level:
+    root: DEBUG
+    org.springframework.web: DEBUG
+    com.howtodoinjava: DEBUG
+    org.hibernate: DEBUG
